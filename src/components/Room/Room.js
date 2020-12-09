@@ -13,7 +13,7 @@ import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader'
 
 export default function Room(props) {
   const group = useRef()
-  const { nodes } = useLoader(GLTFLoader, '/modelos/scene.gltf')
+  const { nodes } = useLoader(GLTFLoader, './modelos/scene.gltf')
   return (
     <group ref={group} {...props} dispose={null}>
       <group rotation={[-Math.PI / 2, 0, 0]}>
