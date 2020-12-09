@@ -17,7 +17,7 @@ function Menu({
   return (
     <div className="ui">
       <h2 className="title" onClick={() => onTitleClicked()}>
-        The Viking Room
+        Nombre del proyecto
       </h2>
       <Nav defaultActiveKey="/home" className="flex-column">
         {items.map((marker) => {

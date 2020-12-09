@@ -29,22 +29,22 @@ function App() {
     {
       position: [0, 0, 0],
       cameraPos: [18, 18, 18],
-      name: "Title"
+      name: "Titulo"
     },
     {
       position: [-12, 10, 2],
       cameraPos: [3, 9, 2],
-      name: "The Tales",
+      name: "Estado 1",
     },
     {
       position: [0, 10, -7],
       cameraPos: [0, 10, 9],
-      name: "The Weapons",
+      name: "Estado 2",
     },
     {
       position: [0, 6, 2],
       cameraPos: [9, 8, 14],
-      name: "The Food",
+      name: "Estado 3",
     },
   ]);
 
@@ -90,7 +90,7 @@ function App() {
       <div className="ui">
         <h2 className="title"
           onClick={() => onNavigationItemClicked(0)}>
-          The Viking Room
+            Nombre del Proyecto
         </h2>
         <Nav defaultActiveKey="/home" className="flex-column">
           <NavLink
@@ -156,9 +156,7 @@ function App() {
           saturation={0}
           fade={true} />
       </Canvas>
-      <audio autoPlay loop>
-        <source src="music.mp3" type="audio/mpeg"></source>
-      </audio>
+  
     </div>
   );
 }

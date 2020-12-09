@@ -3,7 +3,7 @@ import React from "react";
 
 const Fallback = () => (
     <Html>
-      <h2 className="loading">Loading...</h2>
+      <h2 className="loading">Cargando...</h2>
     </Html>
   );
 

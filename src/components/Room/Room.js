@@ -13,12 +13,15 @@ import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader'
 
 export default function Room(props) {
   const group = useRef()
-  const { nodes, materials } = useLoader(GLTFLoader, '/scene.gltf')
+  const { nodes } = useLoader(GLTFLoader, '/modelos/scene.gltf')
   return (
     <group ref={group} {...props} dispose={null}>
       <group rotation={[-Math.PI / 2, 0, 0]}>
         <group rotation={[Math.PI / 2, 0, 0]}>
-          <mesh material={materials.Texture1} geometry={nodes.mesh_all1_Texture1_0.geometry} />
+        <mesh visible userData={{ test: "hello" }} position={[0, 0, 0]} rotation={[0, 0, 0]}>
+                    <sphereGeometry attach="geometry" args={[4,4, 4]} />
+                    <meshStandardMaterial attach="material" wireframe />
+                </mesh>
         </group>
       </group>
     </group>
